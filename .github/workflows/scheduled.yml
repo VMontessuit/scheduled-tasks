@@ -39,6 +39,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Debug environment (IMPORTANT)
+        run: |
+          echo "=== CURRENT DIRECTORY ==="
+          pwd
+          echo "=== FILES IN REPO ==="
+          ls -R
+
       - name: Run script
         env:
           # Your secrets are available as environment variables
