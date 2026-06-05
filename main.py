@@ -1,12 +1,13 @@
 ##################### Extra Hard Starting Project ######################
+import os
 import pandas as pd
 import smtplib
 import random
 import datetime as dt
 
 
-MY_EMAIL = "bobday32100days@gmail.com"
-MY_PASSWORD = "xnry bleo ulww gpcu"
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get(MY_PASSWORD")
 
 # 1. Update the birthdays.csv
 
